@@ -590,12 +590,18 @@
                 <property name="value">
                  <number>7</number>
                 </property>
+                <property name="readOnly"> 
+                <bool>true</bool>
+               </property>
                </widget>
               </item>
               <item row="0" column="0">
                <widget class="QCheckBox" name="checkBoxAutoUpdateCheck">
                 <property name="text">
                  <string>Automatically check every</string>
+                </property>
+                <property name="checkable">
+                <bool>false</bool>
                 </property>
                </widget>
               </item>
