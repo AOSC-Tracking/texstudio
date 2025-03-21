@@ -104,7 +104,11 @@ versionGreaterOrEqual($$QT_VERSION, "6.0.0") {
     }
 }
 
-include(src/qtsingleapplication/qtsingleapplication.pri)
+isEmpty(USE_SYSTEM_QTSINGLEAPPLICATION){
+    include(qtsingleapplication/qtsingleapplication.pri)
+} else {
+    CONFIG += qtsingleapplication
+}
 
 # ##############################
 # precompile_header: PRECOMPILED_HEADER = mostQtHeaders.h
